@@ -1,0 +1,68 @@
+@use "./variables" as v;
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.contactUL {
+  display: flex; 
+  li {
+    padding: 3rem 3rem 0 0;
+    i {
+      font-size: 4.5rem;
+    }
+  }
+}
+
+.contactText {
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.contactForm {
+  width: 45%;
+}
+
+input {
+  width: 45%;
+  padding: 1rem 1.5rem;
+  border-radius: 1.2rem;
+  border: 1.5px solid black;
+}
+
+.formFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit {
+  width: 50%;
+  align-self: center;
+  background-color: aliceblue;
+  border: 1.2px solid black;
+  border-radius: 1.2rem;
+  padding: 1rem 1.2rem;
+
+}
+
+textarea {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1.5px solid black;
+  resize: none;
+
+}
+
+input::placeholder,
+textarea::placeholder,
+button {
+  text-transform: uppercase;
+}
