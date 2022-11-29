@@ -1,0 +1,37 @@
+@use "./variables" as v;
+
+.wrapper {
+  width: 90%; 
+  margin: 0 auto;
+  max-width: 1260px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+nav, ul, h1, h2, h3, h4, footer, p, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.about, 
+.portfolio {
+  border-bottom: 1px solid v.$grey;
+  border-top: 1px solid v.$grey;
+  margin: 2rem auto;
+}
+
+.about, .skills, .portfolio, .contact {
+  padding: 5rem 0;
+}

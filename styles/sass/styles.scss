@@ -1,0 +1,26 @@
+
+@use "./partials/setup";
+@use "./partials/global";
+@use "./partials/variables";
+@use "./partials/typography";
+
+// Nav
+@use "./partials/nav";
+
+// Header
+@use "./partials/header";
+
+// About
+@use "./partials/about";
+
+// skills
+@use "./partials/skills";
+
+// projects
+@use "./partials/projects";
+
+// Contact 
+@use "./partials/contact";
+
+
+
