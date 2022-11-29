@@ -1,0 +1,35 @@
+@use "./variables" as v;
+
+header {
+  min-height: 100vh;
+  // background: url("../assets/headerImagebg.png"), url("../assets/whitebk.jpeg");
+  // background-repeat: no-repeat;
+  // background-size: contain, cover;
+  // background-position: left, right;
+  // background: url("../assets/space5.png");
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-position: center;
+  // opacity: 0.8;
+}
+
+
+.headerContainer {
+  // text-align: center;
+  // margin-top: 2vh;
+  opacity: 1;
+  h2 {
+    text-align: center;
+  }
+
+
+}
+
+.headerText {
+  margin-top: 8rem;
+  // background-color: rgba(255, 255, 255, 0.65);
+  padding: 10rem 5rem;
+  text-shadow: -2px 0px 10px white;
+
+
+}

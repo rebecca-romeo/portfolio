@@ -1,0 +1,14 @@
+@use "./variables" as v;
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+
+  li {
+    padding: 2rem;
+    // text-shadow: -2px 0px 8px white;
+    text-transform: uppercase;
+    // font-weight: 600;
+  }
+}
+

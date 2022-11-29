@@ -317,3 +317,33 @@ h4 {
 footer {
   text-align: center;
 }
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+nav ul li {
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+header {
+  min-height: 100vh;
+}
+
+.headerContainer {
+  opacity: 1;
+}
+.headerContainer h2 {
+  text-align: center;
+}
+
+.headerText {
+  margin-top: 8rem;
+  padding: 10rem 5rem;
+  text-shadow: -2px 0px 10px white;
+}
