@@ -670,4 +670,13 @@ button {
   .skillsList {
     width: 90%;
   }
+  .imgContainer {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .projectImage {
+    width: 100%;
+  }
 }
