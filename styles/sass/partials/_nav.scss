@@ -1,14 +1,28 @@
 @use "./variables" as v;
 
-nav ul {
-  display: flex;
-  justify-content: flex-end;
+nav {
+  // position: fixed;
+  // top: 2.5rem;
+  // right: 5rem;
+  // background-color: rgba(255, 255, 255, 0.5);
 
-  li {
-    padding: 2rem;
-    // text-shadow: -2px 0px 8px white;
-    text-transform: uppercase;
-    // font-weight: 600;
+
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+
+
+    li {
+      padding: 2rem;
+      // text-shadow: -2px 0px 8px white;
+      text-transform: uppercase;
+      // font-weight: 600;
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+      }
+    }
   }
 }
 

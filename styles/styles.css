@@ -330,12 +330,17 @@ nav ul li {
   padding: 2rem;
   text-transform: uppercase;
 }
+nav ul li:hover, nav ul li:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 
 header {
   min-height: 100vh;
 }
 
 .headerContainer {
+  padding-top: 2rem;
   opacity: 1;
 }
 .headerContainer h2 {
@@ -407,6 +412,10 @@ i {
   width: 25%;
   padding: 2rem;
 }
+.skillsList li:hover, .skillsList li:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 
 .skillsContainer {
   display: -webkit-box;
@@ -441,7 +450,7 @@ i {
   padding: 2rem 0;
 }
 .projectStack li {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   margin-right: 1rem;
   border: 1px solid black;
   border-radius: 0.5rem;
@@ -490,6 +499,10 @@ i {
 .contactUL li {
   padding: 3rem 3rem 0 0;
 }
+.contactUL li:hover, .contactUL li:focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 .contactUL li i {
   font-size: 4.5rem;
 }
@@ -537,6 +550,10 @@ input {
   border: 1.2px solid black;
   border-radius: 1.2rem;
   padding: 1rem 1.2rem;
+}
+.submit:hover, .submit:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 textarea {

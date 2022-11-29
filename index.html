@@ -6,10 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rebecca Romeo</title>
 
+  <script src="https://kit.fontawesome.com/23395927b9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Klee+One&family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/23395927b9.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/styles.css">
+
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script defer src="./app.js"></script>
 
 </head>
 <body>
@@ -42,52 +48,78 @@
 
   <main>
     <section id="about" class="about wrapper">
-      <h3>About</h3>
+      <h3 data-aos="fade-down" data-aos-duration="1200">About</h3>
       <div class="flexContainer">
-        <div class="aboutSummary">
+        <div data-aos="fade-down" 
+        data-aos-easing="linear" data-aos-duration="1500"class="aboutSummary">
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repellat nam adipisci omnis quos placeat vero amet ad, atque officiis dolores quas dolorem dignissimos sed earum temporibus nulla, explicabo aliquam!
             Porro hic ipsam aut. Autem repudiandae quas libero ipsam ipsa debitis facilis, quis sint quo nihil ratione rem cum aut asperiores consectetur. Vero nam amet, tenetur ipsam ducimus impedit excepturi?</p>
         </div>
-        <div class="imgContainer">
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" data-aos-duration="2000" class="imgContainer">
           <img src="./assets/aboutImage.jpeg" class="aboutImage" alt="">
         </div>
       </div>
   
     </section>
-    <section id="skills" class="skills wrapper">
+    <section id="skills" class="skills wrapper" >
       <div class="skillsSection">
         <h3>Skills</h3>
         <div class="skillsContainer">
           <ul class="skillsList">
-            <li>
+            <li data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+            data-aos-delay="100">
               <i class="devicon-html5-plain"></i>
               html5
             </li>
-            <li>
+            <li data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+            data-aos-delay="300">
               <i class="devicon-css3-plain"></i>
               css3
             </li>
-            <li>
+            <li data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+            data-aos-delay="500">
               <i class="devicon-sass-original"></i>
               sass
             </li>
-            <li>
+            <li data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+            data-aos-delay="700">
               <i class="devicon-javascript-plain"></i>
               javascript
             </li>
-            <li>
+            <li data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+            data-aos-delay="100">
               <i class="devicon-react-original"></i>
               react
             </li>
-            <li>
+            <li data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+            data-aos-delay="300">
               <i class="devicon-git-plain"></i>
               git
             </li>
-            <li>
+            <li data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+            data-aos-delay="500">
               <i class="devicon-github-original"></i>
               github
             </li>
-            <li>
+            <li data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="800"
+            data-aos-delay="700">
               <i class="devicon-firebase-plain"></i>
               firebase
             </li>
@@ -101,9 +133,11 @@
     <section id="portfolio" class="portfolio wrapper">
       <h3>Projects</h3>
 
-      <div class="project project1">
+      <div class="project project1" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <div class="projectImage">
-          <img src="./assets/mockup.png" alt="">
+          <img src="./assets/mockuphold.png" alt="">
         </div>
         <div class="projectDescription">
           <h4>Placeholder</h4>
@@ -125,9 +159,11 @@
       </div>
 
 
-      <div class="project project2">
+      <div class="project project2" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <div class="projectImage">
-          <img src="./assets/mockup.png" alt="">
+          <img src="./assets/mockup10.png" alt="">
         </div>
         <div class="projectDescription">
           <h4>Who's That Pokemon</h4>
@@ -149,7 +185,9 @@
       </div>
 
 
-      <div class="project project3">
+      <div class="project project3" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <div class="projectImage">
           <img src="./assets/mockup9.png" alt="">
         </div>
@@ -171,7 +209,8 @@
 
     <section id="contact" class="contact wrapper">
 
-      <div class="contactText">
+      <div data-aos="fade-right" data-aos-duration="1200"
+      class="contactText">
         <h3>get in touch</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, veniam id, magnam sequi laboriosam ratione ea obcaecati vitae minima eius dolorem nostrum expedita natus autem, quidem quibusdam quod aut tenetur.</p>
         <ul class="contactUL">
@@ -200,7 +239,8 @@
       </div>
       
 
-      <div class="contactForm">
+      <div  data-aos="fade-left" data-aos-duration="1200"
+      class="contactForm">
         <form 
         action="https://formspree.io/f/mnqrbwkk" 
         method="POST"> 
@@ -227,6 +267,10 @@
     <p>Designed and built by Rebecca Romeo 2022 </p>
     
   </footer>
+ 
+
+
+
   
 </body>
 </html>
