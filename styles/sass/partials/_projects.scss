@@ -1,0 +1,61 @@
+@use "./variables" as v;
+
+.project {
+  display: flex;
+  gap: 5rem;
+  // margin-top: 5rem;
+}
+
+.project2 {
+  flex-direction: row-reverse;
+}
+
+.projectStack {
+  display: flex;
+  padding: 2rem 0;
+
+  li {
+    padding: 1rem;
+    margin-right: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+  }
+}
+
+.projectDescription {
+width: 45%;
+  .projectLinks a {
+      display: inline-block;
+      font-weight: 600;
+      margin: 1.5rem 3rem 0 0;
+    }
+}
+
+.projectImage {
+  width: 50%;
+  background-color: rgba(212, 219, 221, 0.5);
+
+
+}
+
+.project1 {
+  // background-color: rgba(229, 239, 230, 0.6);
+  padding: 3rem;
+  // border-radius: 3rem;
+}
+
+
+.project3 {
+  // background-color: rgba(249, 239, 235, 0.7);
+  padding: 3rem;
+  // border-radius: 3rem;
+}
+
+.project2 {
+  // background-color: rgb(246, 246, 246);
+  padding: 3rem;
+  // border-radius: 3rem;
+}
+
+
+
