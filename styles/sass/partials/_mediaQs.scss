@@ -1,11 +1,62 @@
 @use "./variables";
 
-@media (max-width: 1000px) {
-  /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+@media (max-width: 1200px) {
+  .aboutImage {
+    min-width: 90%;
+  }
 }
 
-@media (max-width: 800px) {
-  /* all of our styles for TABLET devices will go within this breakpoint */
+@media (max-width: 1100px) {
+  .aboutSummary {
+    width: 55%;
+  }
+  .imgContainer {
+    width: 40%;
+    text-align: center;
+  }
+
+.project {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projectDescription {
+  width: 100%;
+  text-align: center;
+}
+
+.projectStack {
+  justify-content: center;
+}
+
+.projectImage {
+  width: 60%;
+}
+
+}
+
+
+@media (max-width: 1000px) {
+  .skillsList {
+    width: 70%;
+  }
+}
+
+@media (max-width: 850px) {
+  .contact {
+    flex-wrap: wrap;
+    gap: 3rem;
+    h3 {
+      text-align: center;
+    }
+  }
+  .contactText,
+  .contactForm {
+    width: 100%;
+  }
+
+  .contactUL {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 500px) {
