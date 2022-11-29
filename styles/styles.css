@@ -316,6 +316,8 @@ h4 {
 
 footer {
   text-align: center;
+  border-top: 2px solid black;
+  padding: 0.5rem;
 }
 
 nav ul {
@@ -646,7 +648,26 @@ button {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .flexContainer {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutImage {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  .aboutSummary {
+    width: 100%;
+  }
 }
-@media (max-width: 500px) {
-  /* all of our styles for MOBILE devices will go within this breakpoint */
+@media (max-width: 700px) {
+  .projectImage {
+    width: 80%;
+  }
+  .skillsList {
+    width: 90%;
+  }
 }
