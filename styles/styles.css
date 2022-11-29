@@ -712,4 +712,7 @@ button {
   .projectStack li {
     font-size: 1.4rem;
   }
+  .headerText {
+    margin-top: 5rem;
+  }
 }
