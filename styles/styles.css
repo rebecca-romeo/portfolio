@@ -703,4 +703,7 @@ button {
   .contact {
     text-align: center;
   }
+  button {
+    color: black;
+  }
 }
