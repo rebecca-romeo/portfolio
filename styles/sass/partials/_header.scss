@@ -10,7 +10,7 @@ header {
   // background-repeat: no-repeat;
   // background-size: contain;
   // background-position: center;
-  // opacity: 0.8;
+  opacity: 0.8;
   background: url(../assets/stars.png);
   background-size: contain;
   background-color: rgba(233, 200, 174, 0.1);
@@ -29,7 +29,7 @@ header {
 }
 
 .headerText {
-  margin-top: 15rem;
+  margin-top: 10rem;
   // background-color: rgba(255, 255, 255, 0.65);
   padding: 10rem 5rem;
   text-shadow: -2px 0px 10px white;
