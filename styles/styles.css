@@ -706,4 +706,10 @@ button {
   button {
     color: black;
   }
+  .projectLinks {
+    font-size: 1.4rem;
+  }
+  .projectStack li {
+    font-size: 1.4rem;
+  }
 }
