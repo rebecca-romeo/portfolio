@@ -41,6 +41,13 @@
   }
 }
 
+@media (max-width: 930px) {
+  h2 {
+    font-size: 3.8rem;
+  }
+
+}
+
 @media (max-width: 850px) {
   .contact {
     flex-wrap: wrap;
