@@ -21,32 +21,8 @@
 <body>
 
   <header>
+    <div class="headerContainer wrapper">
 
-
-      <div class="headerText">
-        <div class="headerContainer">
-
-
-        <div class="wave">
-
-    
-          <svg width="100%" height="200px" fill="none" version="1.1"
-           xmlns="http://www.w3.org/2000/svg">
-            <path 
-              fill="white" 
-              d="
-                M0 67
-                C 273,183
-                  822,-41
-                  1920.01,106 
-                V 359 
-                H 0 
-                V 67
-                Z">
-            </path>
-          </svg>
-        </div>
-        <div id="container">
           <nav>
             <ul>
               <li><a href="#about">About</a></li>
@@ -55,39 +31,21 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
+
             <h1>Rebecca Romeo</h1>
             <h2>front end developer</h2>
-        </div> 
 
-
-        
-        <!-- <h1>
-          Hello! I'm Rebecca Romeo
-        </h1>
-    
-        <h2>
-          a front end developer
-        </h2> -->
-
-      </div>
     </div>
-
   </header>
 
   <main>
     <section id="about" class="about wrapper">
-      <h3 data-aos="fade-down" data-aos-duration="1200">About</h3>
       <div class="flexContainer">
-        <div data-aos="fade-down" 
-        data-aos-duration="1200"class="aboutSummary">
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est repellat nam adipisci omnis quos placeat vero amet ad, atque officiis dolores quas dolorem dignissimos sed earum temporibus nulla, explicabo aliquam!
-            Porro hic ipsam aut. Autem repudiandae quas libero ipsam ipsa debitis facilis, quis sint quo nihil ratione rem cum aut asperiores consectetur. Vero nam amet, tenetur ipsam ducimus impedit excepturi?</p>
+        <div class="aboutSummary">
+          <h3>About</h3>
+          <p> Hi, I'm Rebecca! A freshly minted front end developer with a love for coffee, cats, and coding. I have an eye for detail and I enjoy creating aesthetic, responsive, accessible websites and apps. I like to meet challenging goals and collaborating with others to achieve results. </p>
         </div>
-        <div 
-        data-aos="fade-up"
-        data-aos-anchor-placement="center-bottom" 
-        data-aos-duration="1200" 
-        class="imgContainer">
+        <div class="imgContainer">
           <img src="./assets/aboutImage.jpeg" class="aboutImage" alt="">
         </div>
       </div>
@@ -164,23 +122,21 @@
     <section id="portfolio" class="portfolio wrapper">
       <h3>Projects</h3>
 
-      <div class="project project1" data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="3000">
+      <div class="project project1">
         <div class="projectImage">
           <img src="./assets/mockuphold.png" alt="">
         </div>
         <div class="projectDescription">
-          <h4>Placeholder</h4>
+          <h4>FreeTravel</h4>
           <ul class="projectStack">
             <li>html</li>
             <li>sass</li>
             <li>javascript</li>
           </ul>
-          <p class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iusto dignissimos repellat? Rerum veniam odio, enim, blanditiis ducimus doloribus laudantium eos pariatur at itaque reprehenderit, soluta aut maiores! Distinctio, odio. </p>
+          <p class="summary">A travel exploration app. Users can search for & explore any city or country. Utilizes an API data source, core React concepts & UI design</p>
           <div class="projectLinks">
-            <a href="">view live</a>
-            <a href="">view code</a>
+            <a href="https://freetravel-main.netlify.app">view live</a>
+            <a href="https://github.com/rebecca-romeo/rebeccaRomeoProject3">view code</a>
           </div>
         </div>
       </div>
@@ -190,9 +146,7 @@
       </div>
 
 
-      <div class="project project2" data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="3000">
+      <div class="project project2">
         <div class="projectImage">
           <img src="./assets/mockup10.png" alt="">
         </div>
@@ -203,10 +157,10 @@
             <li>sass</li>
             <li>javascript</li>
           </ul>
-          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos deserunt temporibus ut ducimus facere unde! Impedit quo eaque doloribus nobis nesciunt veniam officiis assumenda aut. Sint vel exercitationem pariatur maiores.</p>
+          <p> Users can learn about random Pokemon, or they can search for a Pokemon of choice. Utilizes an API, JavaScript, DOM manipulation, error handling & UI design, and teamwork in paired programming</p>
           <div class="projectLinks">
-            <a href="">view live</a>
-            <a href="">view code</a>
+            <a href="https://whos-that-pokemon-main.netlify.app">view live</a>
+            <a href="https://github.com/junoprojects/whosThatPokemonThomasAndRebecca">view code</a>
           </div>
         </div>
       </div>
@@ -216,9 +170,7 @@
       </div>
 
 
-      <div class="project project3" data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="3000">
+      <div class="project project3">
         <div class="projectImage">
           <img src="./assets/mockup9.png" alt="">
         </div>
@@ -228,7 +180,7 @@
             <li>html</li>
             <li>sass</li>
           </ul>
-          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio saepe nam atque adipisci dolor natus hic voluptates odit? Eveniet repellendus corrupti maiores consectetur rem repellat quisquam qui ut ex eius.</p>
+          <p> Translated static design images into a functional, multi-page responsive website using HTML and SASS</p>
           <div class="projectLinks">
             <a href="">view live</a>
             <a href="">view code</a>
@@ -240,16 +192,29 @@
 
     <section id="contact" class="contact wrapper">
 
-      <div data-aos="fade-right" data-aos-duration="3000"
-      class="contactText">
-        <h3>get in touch</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, veniam id, magnam sequi laboriosam ratione ea obcaecati vitae minima eius dolorem nostrum expedita natus autem, quidem quibusdam quod aut tenetur.</p>
+      <div 
+      class="contactText"
+      >
+        <h3>Let's Connect</h3>
+        <p>Thanks for stopping by. Please feel free to send a message, email, or connect with me on LinkedIn. My calendly is also available if you would like to schedule a chat!</p>
         <ul class="contactUL">
+          <li>
+            <a href="mailto: rebeccaromeo.dev@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </li>
           <li>
             <a 
             href="https://www.linkedin.com/in/rebeccaromeo/"
             target="_blank">
               <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://calendly.com/rebeccaromeo-dev"
+            target="_blank">
+            <i class="fa-regular fa-calendar-days"></i>
             </a>
           </li>
 
@@ -260,17 +225,12 @@
             </a>
           </li>
 
-          <li>
-            <a href="mailto: rebeccaromeo.dev@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-          </li>
         </ul>
       
       </div>
       
 
-      <div  data-aos="fade-left" data-aos-duration="3000"
+      <div  
       class="contactForm">
         <form 
         action="https://formspree.io/f/mnqrbwkk" 
@@ -287,7 +247,7 @@
           <label for="message" class="sr-only">Leave a message</label>
           <textarea name="message" id="message" cols="20" rows="8" placeholder="message" required></textarea>
   
-          <button type="submit" class="submit">Submit</button>
+          <button type="submit" class="submit">Send message!</button>
         </form>
       </div>
     </section>
