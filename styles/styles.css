@@ -323,6 +323,11 @@ footer {
   padding: 0.5rem;
 }
 
+nav {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,32 +346,12 @@ nav ul li:hover, nav ul li:focus {
           transform: scale(1.2);
 }
 
-body {
-  height: 100%;
-  margin: 0;
-}
-
-div.wave {
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-  z-index: 99;
-}
-
-.wave svg {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
-
-#container {
-  position: relative;
-  background: -webkit-gradient(linear, left top, right top, from(hsl(328deg, 75%, 45%)), to(hsl(269deg, 85%, 41%)));
-  background: linear-gradient(90deg, hsl(328deg, 75%, 45%) 0%, hsl(269deg, 85%, 41%) 100%);
-  height: 90vh;
+header {
+  background: url(../../../assets/a6Wave-9.1s-1561px.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   color: white;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -374,11 +359,9 @@ div.wave {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 4rem;
-}
-
-h1 {
-  margin-top: 25vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flexContainer {
@@ -441,8 +424,10 @@ i {
   padding: 2rem;
 }
 .skillsList li:hover, .skillsList li:focus {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(236, 39, 255, 0.8)), to(rgba(75, 200, 255, 0.8)));
+  background-image: linear-gradient(to right, rgba(236, 39, 255, 0.8), rgba(75, 200, 255, 0.8));
+  color: white;
+  border-radius: 10px;
 }
 
 .skillsContainer {
@@ -497,6 +482,9 @@ i {
   width: 50%;
   background-color: rgba(212, 219, 221, 0.5);
 }
+.projectImage img {
+  min-width: 110%;
+}
 
 .project1 {
   padding: 3rem;
@@ -517,6 +505,7 @@ i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 2rem;
 }
 
 .contactUL {
@@ -530,6 +519,8 @@ i {
 .contactUL li:hover, .contactUL li:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 .contactUL li i {
   font-size: 4.5rem;
@@ -551,14 +542,15 @@ form {
 }
 
 .contactForm {
-  width: 45%;
+  width: 50%;
 }
 
 input {
   width: 45%;
   padding: 1rem 1.5rem;
-  border-radius: 1.2rem;
-  border: 1.5px solid black;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1.2px solid black;
 }
 
 .formFlex {
@@ -571,22 +563,25 @@ input {
 }
 
 .submit {
-  width: 50%;
+  width: 45%;
   -ms-flex-item-align: center;
       align-self: center;
-  background-color: aliceblue;
-  border: 1.2px solid black;
-  border-radius: 1.2rem;
-  padding: 1rem 1.2rem;
+  background-color: transparent;
+  border: none;
+  padding: 0rem 1.2rem;
 }
 .submit:hover, .submit:focus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  background-color: black;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 textarea {
   padding: 2rem;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   border: 1.5px solid black;
   resize: none;
 }
@@ -648,7 +643,7 @@ button {
 }
 @media (max-width: 1000px) {
   .skillsList {
-    width: 70%;
+    width: 80%;
   }
 }
 @media (max-width: 930px) {
@@ -688,13 +683,17 @@ button {
   .aboutSummary {
     width: 100%;
   }
+  .aboutSummary h3 {
+    text-align: center;
+    padding-top: 2rem;
+  }
 }
 @media (max-width: 700px) {
   .projectImage {
     width: 80%;
   }
   .skillsList {
-    width: 90%;
+    width: 100%;
   }
   .imgContainer {
     width: 50%;

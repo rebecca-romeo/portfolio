@@ -27,14 +27,15 @@ i {
 .skillsList {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   width: 50%;
   li {
     width: 25%;
     padding: 2rem;
     &:hover,
     &:focus {
-      transform: scale(1.2);
+      background-image: linear-gradient(to right, rgba(236, 39, 255, 0.8), rgba(75, 200, 255, 0.8));
+      color: white;
+      border-radius: 10px;
     }
   }
 }
