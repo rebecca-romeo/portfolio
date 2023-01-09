@@ -6,236 +6,238 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rebecca Romeo</title>
 
+  <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/23395927b9.js" crossorigin="anonymous"></script>
+  <!-- Dev Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Questrial&family=Raleway:wght@200;300;400;500&family=Rubik+80s+Fade&display=swap" rel="stylesheet"> 
+  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="./styles/styles.css">
 
-
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script defer src="./app.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 
-  <header>
-    <div class="headerContainer wrapper">
+  <header id="home">
+    <div class="wrapper">
+      <nav class="headerNav"> 
+        <ul>
+          <li><a href="#home" title="home"><i class="fa-solid fa-house"></i></a></li>
+          <li><a href="#about" title="about"><i class="fa-solid fa-user"></i></a></li>
+          <li><a href="#skills" title="skills"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
+          <li><a href="#portfolio" title="portfolio"><i class="fa-regular fa-folder-open"></i></a></li>
+          <li><a href="#contact" title="contact"><i class="fa-solid fa-message"></i></a></li>
+        </ul>
+      </nav>
 
-          <nav>
-            <ul>
-              <li><a href="#about">About</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#portfolio">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-
-            <h1>Rebecca Romeo</h1>
-            <h2>front end developer</h2>
-
-    </div>
+      <div class="headerText">
+        <h1>hello world, I'm <br>Rebecca Romeo</h1>
+        <h2>front end developer</h2>
+      </div>
+    </div> <!-- END .wrapper -->
   </header>
 
   <main>
-    <section id="about" class="about wrapper">
-      <div class="flexContainer">
-        <div class="aboutSummary">
-          <h3>About</h3>
-          <p> Hi, I'm Rebecca! A freshly minted front end developer with a love for coffee, cats, and coding. I have an eye for detail and I enjoy creating aesthetic, responsive, accessible websites and apps. I like to meet challenging goals and collaborating with others to achieve results. </p>
-        </div>
-        <div class="imgContainer">
-          <img src="./assets/aboutImage.jpeg" class="aboutImage" alt="">
-        </div>
-      </div>
-  
-    </section>
-    <section id="skills" class="skills wrapper" >
-      <div class="skillsSection">
-        <h3>Skills</h3>
-        <div class="skillsContainer">
-          <ul class="skillsList">
-            <li data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="800"
-            data-aos-delay="100">
-              <i class="devicon-html5-plain"></i>
-              html5
-            </li>
-            <li data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="800"
-            data-aos-delay="300">
-              <i class="devicon-css3-plain"></i>
-              css3
-            </li>
-            <li data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="800"
-            data-aos-delay="500">
-              <i class="devicon-sass-original"></i>
-              sass
-            </li>
-            <li data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="800"
-            data-aos-delay="700">
-              <i class="devicon-javascript-plain"></i>
-              javascript
-            </li>
-            <li data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="800"
-            data-aos-delay="100">
-              <i class="devicon-react-original"></i>
-              react
-            </li>
-            <li data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="800"
-            data-aos-delay="300">
-              <i class="devicon-git-plain"></i>
-              git
-            </li>
-            <li data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="800"
-            data-aos-delay="500">
-              <i class="devicon-github-original"></i>
-              github
-            </li>
-            <li data-aos="fade-down"
-            data-aos-easing="linear"
-            data-aos-duration="800"
-            data-aos-delay="700">
-              <i class="devicon-firebase-plain"></i>
-              firebase
-            </li>
-          </ul>
-        </div>
+    <!-- ABOUT SECTION -->
+    <section class="about wrapper" id="about">
+      <div class="aboutText">
+        <h3>About</h3>
+        <p>Hi, I'm Rebecca! A freshly minted front end developer with a love for coffee, cats, and coding. I have an eye for detail and I enjoy creating aesthetic, responsive, accessible websites and apps. I like to meet challenging goals and collaborating with others to achieve results.</p>
       </div>
 
+      <div class="aboutImgContainer">
+        <img src="./assets/aboutImage.jpeg" alt="An image of Rebecca Romeo from the shoulders up smiling at the camera." class="aboutImg">
+      </div>
+    </section> <!-- END ABOUT SECTION -->
 
-    </section>
+    <!-- SKILLS SECTION -->
+    <section class="skills wrapper" id="skills">
+      <h3>Skills</h3>
+      <ul class="skillsList">
+        <li data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+        data-aos-delay="100">
+          <i class="devicon-html5-plain"></i>
+          html5
+        </li>
+        <li data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+        data-aos-delay="300">
+          <i class="devicon-css3-plain"></i>
+          css3
+        </li>
+        <li data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+        data-aos-delay="500">
+          <i class="devicon-sass-original"></i>
+          sass
+        </li>
+        <li data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+        data-aos-delay="700">
+          <i class="devicon-javascript-plain"></i>
+          javascript
+        </li>
+        <li data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+        data-aos-delay="100">
+          <i class="devicon-react-original"></i>
+          react
+        </li>
+        <li data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+        data-aos-delay="300">
+          <i class="devicon-git-plain"></i>
+          git
+        </li>
+        <li data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+        data-aos-delay="500">
+          <i class="devicon-github-original"></i>
+          github
+        </li>
+        <li data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="800"
+        data-aos-delay="700">
+          <i class="devicon-firebase-plain"></i>
+          firebase
+        </li>
+      </ul>
+    </section> <!-- END SKILLS SECTION -->
 
-    <section id="portfolio" class="portfolio wrapper">
+    <section class="portfolio wrapper" id="portfolio">
       <h3>Projects</h3>
 
-      <div class="project project1">
-        <div class="projectImage">
-          <img src="./assets/mockup4.png" alt="">
-        </div>
-        <div class="projectDescription">
+      <!-- FreeTravel Project -->
+      <div class="project">
+        <div class="projectTextContainer">
           <h4>FreeTravel</h4>
-          <ul class="projectStack">
-            <li>html</li>
-            <li>sass</li>
-            <li>javascript</li>
-          </ul>
-          <p class="summary">A travel exploration app. Users can search for & explore any city or country. Utilizes an API data source, core React concepts & UI design</p>
+          <span class="projectStack">react / api / css</span>
+          <p class="projectSummary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque accusantium, sequi vitae dolore, explicabo quia fuga libero, voluptatum perspiciatis provident ad repellendus. Quae asperiores deserunt distinctio, qui ipsa reprehenderit ab.
+
+          </p>
           <div class="projectLinks">
-            <a href="https://freetravel-main.netlify.app">view live</a>
-            <a href="https://github.com/rebecca-romeo/rebeccaRomeoProject3">view code</a>
+            <a href="https://freetravel-main.netlify.app" target="_blank">view live <i class="fa-solid fa-share"></i></a>
+            <a href="https://github.com/rebecca-romeo/rebeccaRomeoProject3" target="_blank">view code <i class="fa-solid fa-share"></i></a>
           </div>
         </div>
-      </div>
-
-      <div>
-        <img src="./assets/border.png" alt="">
-      </div>
-
-
-      <div class="project project2">
-        <div class="projectImage">
-          <img src="./assets/mockup10.png" alt="">
+        <div class="projectImg">
+          <img src="./assets/FreeTravelcopy.png" alt="">
         </div>
-        <div class="projectDescription">
-          <h4>Who's That Pokemon</h4>
-          <ul class="projectStack">
-            <li>html</li>
-            <li>sass</li>
-            <li>javascript</li>
-          </ul>
-          <p> Users can learn about random Pokemon, or they can search for a Pokemon of choice. Utilizes an API, JavaScript, DOM manipulation, error handling & UI design, and teamwork in paired programming</p>
+      </div>
+      <!-- END FreeTravel Project -->
+
+      <!-- Who's That Pokemon Project -->
+      <div class="project projectReverse">
+        <div class="projectTextContainer">
+          <h4>Who's that pokemon</h4>
+          <span class="projectStack"> javascript / api / html / sass</span>
+          <p class="projectSummary">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam blanditiis minus neque tempora quam corrupti saepe amet quasi, tenetur, ex expedita libero. Veniam molestias, eos totam neque quis atque pariatur!
+          </p>
           <div class="projectLinks">
-            <a href="https://whos-that-pokemon-main.netlify.app">view live</a>
-            <a href="https://github.com/junoprojects/whosThatPokemonThomasAndRebecca">view code</a>
+            <a href="https://whos-that-pokemon-main.netlify.app" target="_blank">view live <i class="fa-solid fa-share"></i></a>
+            <a href="https://github.com/junoprojects/whosThatPokemonThomasAndRebecca" target="_blank">view code <i class="fa-solid fa-share"></i></a>
           </div>
         </div>
-      </div>
-
-      <div>
-        <img src="./assets/border.png" alt="">
-      </div>
-
-
-      <div class="project project3">
-        <div class="projectImage">
-          <img src="./assets/mockup9.png" alt="">
+        <div class="projectImg">
+          <img src="./assets/pokemon2.png" alt="">
         </div>
-        <div class="projectDescription">
-          <h4>Sanctuary Helpers</h4>
-          <ul class="projectStack">
-            <li>html</li>
-            <li>sass</li>
-          </ul>
-          <p> Translated static design images into a functional, multi-page responsive website using HTML and SASS</p>
+      </div>
+      <!-- END Who's That Pokemon Project -->
+
+
+      <!-- Creative PSD Project -->
+      <div class="project">
+        <div class="projectTextContainer">
+          <h4>CREATIVE Website</h4>
+          <span class="projectStack">
+            PSD conversion / html / sass
+          </span>
+          <p class="projectSummary">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est ut id consequuntur ab ullam aliquid iusto harum. Numquam quo illum fugiat eum voluptate cum voluptatum! Sunt at deserunt rerum enim.
+          </p>
           <div class="projectLinks">
-            <a href="">view live</a>
-            <a href="">view code</a>
+            <a href="https://creative-services.netlify.app" target="_blank">view live <i class="fa-solid fa-share"></i></a>
+            <a href="https://github.com/rebecca-romeo/designConversion" target="_blank">view code <i class="fa-solid fa-share"></i></a>
           </div>
         </div>
+        <div class="projectImg">
+          <img src="./assets/creative.png" alt="">
+        </div>
       </div>
+      <!-- END Creative PSD Project -->
+
+      <!-- Project -->
+      <!-- <div class="project">
+        <div class="projectTextContainer">
+          <h4></h4>
+          <span class="projectStack">
+          </span>
+          <p class="projectSummary">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est ut id consequuntur ab ullam aliquid iusto harum. Numquam quo illum fugiat eum voluptate cum voluptatum! Sunt at deserunt rerum enim.
+          </p>
+          <div class="projectLinks">
+            <a href="" target="_blank">view live <i class="fa-solid fa-share"></i></a>
+            <a href="" target="_blank">view code <i class="fa-solid fa-share"></i></a>
+          </div>
+        </div>
+        <div class="projectImg">
+          <img src="" alt="">
+        </div>
+      </div> -->
+      <!-- END Project -->
+
+
+
     </section>
 
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+      <div class="contactContainer wrapper">
+        <div class="contactTextContainer">
+          <h3>Let's Connect</h3>
+          <p>Thanks for stopping by. I'd love to hear from you! Please feel free to send a message, email, or connect with me on LinkedIn. My calendly is also available if you would like to schedule some time to chat!</p>
+          <ul class="contactUL">
+            <li>
+              <a href="mailto: rebeccaromeo.dev@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a 
+              href="https://www.linkedin.com/in/rebeccaromeo/"
+              target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+    
+            <li>
+              <a href="https://calendly.com/rebeccaromeo-dev"
+              target="_blank">
+              <i class="fa-regular fa-calendar-days"></i>
+              </a>
+            </li>
+    
+            <li>
+              <a href="https://github.com/rebecca-romeo"
+              target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+          </ul> 
+        </div> <!-- END .contactTextContainer -->
 
-    <section id="contact" class="contact wrapper">
-
-      <div 
-      class="contactText"
-      >
-        <h3>Let's Connect</h3>
-        <p>Thanks for stopping by. Please feel free to send a message, email, or connect with me on LinkedIn. My calendly is also available if you would like to schedule a chat!</p>
-        <ul class="contactUL">
-          <li>
-            <a href="mailto: rebeccaromeo.dev@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-          </li>
-          <li>
-            <a 
-            href="https://www.linkedin.com/in/rebeccaromeo/"
-            target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://calendly.com/rebeccaromeo-dev"
-            target="_blank">
-            <i class="fa-regular fa-calendar-days"></i>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/rebecca-romeo"
-            target="_blank">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </li>
-
-        </ul>
-      
-      </div>
-      
-
-      <div  
-      class="contactForm">
-        <form 
-        action="https://formspree.io/f/mnqrbwkk" 
-        method="POST"> 
-        
+        <form action="https://formspree.io/f/mnqrbwkk" method="POST" class="contactForm"> 
+          
           <div class="formFlex">
             <label for="name" class="sr-only">Provide your name</label>
             <input type="text" id="name" name="name" placeholder="name" class="input" required>
@@ -247,21 +249,18 @@
           <label for="message" class="sr-only">Leave a message</label>
           <textarea name="message" id="message" cols="20" rows="8" placeholder="message" required></textarea>
   
-          <button type="submit" class="submit">Send message!</button>
+          <button type="submit" class="submit">Send message <i class="fa-solid fa-paper-plane"></i></button>
         </form>
-      </div>
-    </section>
+      </div> <!-- END .contactContainer .wrapper -->
+    </section> <!-- END CONTACT SECTION -->
 
   </main>
 
   <footer>
     <p>Designed and built by Rebecca Romeo 2022 </p>
-    
   </footer>
- 
 
+  <script src="./app.js"></script>
 
-
-  
 </body>
 </html>
