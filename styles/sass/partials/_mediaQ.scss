@@ -15,7 +15,6 @@
 
 
 @media (max-width: 1070px) {
-
   // HEADER
   h1 {
     font-size: 9rem;
@@ -221,7 +220,7 @@
     }
     .headerNav {
       ul {
-        gap: 1.6rem;
+        gap: 1.9rem;
       }
       i {
         font-size: 1.8rem;
@@ -230,8 +229,15 @@
       }
     }
     .headerText {
-      top: 18vh;
+      top: 0vh;
+      padding-bottom: 1.5rem;
     }
+  }
+  .headerContainer{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    top: 20vh;
   }
   h3 {
     font-size: 3rem;
@@ -289,7 +295,8 @@
     }
   }
   form .submit {
-    width: 50%;
+    width: 55%;
+    padding: 0.8rem 1.2rem;
   }
 }
 
@@ -298,11 +305,7 @@
     h1 {
       letter-spacing: 0.2px;
     }
-    .headerText {
-      top: 21vh;
-    }
   }
-
   .about .aboutImgContainer {
     width: 70%;
   }
@@ -325,6 +328,9 @@
 }
 
 @media (max-width: 435px) {
+  body, input, textarea, button {
+    line-height: 2.1rem;
+  }
   header {
     h1 {
       font-size: 3.8rem;
@@ -345,11 +351,86 @@
       }
     }
   }
-  // h4 {
-  //   font-size: 2rem;
-  // }
-
   .about .aboutImgContainer {
     width: 80%;
+  }
+
+  .projectStack {
+    padding: 0.5rem 1rem;
+  }
+
+  .projectLinks a {
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+@media (max-width: 395px) {
+  form .submit {  
+    width: 60%; 
+  }
+  .skills .skillsList {
+    width: 95%;
+    gap: 2.5rem 1rem;
+    li {
+      padding: 0;
+    }
+  }
+  .about {
+    padding-bottom: 4rem;
+  }
+}
+
+@media (max-width: 370px) {
+  body, input, textarea, button {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  header {
+    h1 {
+      font-size: 3.5rem;
+      line-height: 4.2rem;
+    }
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+  }
+  h3 {
+    font-size: 2.8rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+
+  .skills .skillsList {
+    width: 90%;
+    gap: 2.5rem 0rem;
+    i {
+      font-size: 3.8rem;
+    }
+  }
+
+  .projectLinks a {
+    font-size: 1.2rem;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 340px) {
+  header h1 {
+    font-size: 3.3rem;
+  }
+
+  projectStack {
+    padding: 0.4rem 1rem;
+  }
+
+  .projectLinks a {
+    padding: 0.6rem 1.2rem;
+    margin-right: 0.4rem;
   }
 }

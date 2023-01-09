@@ -784,7 +784,7 @@ form button {
     line-height: 3.5rem;
   }
   header .headerNav ul {
-    gap: 1.6rem;
+    gap: 1.9rem;
   }
   header .headerNav i {
     font-size: 1.8rem;
@@ -792,7 +792,19 @@ form button {
     border-width: 2px;
   }
   header .headerText {
-    top: 18vh;
+    top: 0vh;
+    padding-bottom: 1.5rem;
+  }
+  .headerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: relative;
+    top: 20vh;
   }
   h3 {
     font-size: 3rem;
@@ -839,15 +851,13 @@ form button {
     bottom: 1.5rem;
   }
   form .submit {
-    width: 50%;
+    width: 55%;
+    padding: 0.8rem 1.2rem;
   }
 }
 @media (max-width: 480px) {
   header h1 {
     letter-spacing: 0.2px;
-  }
-  header .headerText {
-    top: 21vh;
   }
   .about .aboutImgContainer {
     width: 70%;
@@ -867,6 +877,9 @@ form button {
   }
 }
 @media (max-width: 435px) {
+  body, input, textarea, button {
+    line-height: 2.1rem;
+  }
   header h1 {
     font-size: 3.8rem;
     line-height: 4.8rem;
@@ -885,5 +898,71 @@ form button {
   }
   .about .aboutImgContainer {
     width: 80%;
+  }
+  .projectStack {
+    padding: 0.5rem 1rem;
+  }
+  .projectLinks a {
+    padding: 0.7rem 1.5rem;
+  }
+}
+@media (max-width: 395px) {
+  form .submit {
+    width: 60%;
+  }
+  .skills .skillsList {
+    width: 95%;
+    gap: 2.5rem 1rem;
+  }
+  .skills .skillsList li {
+    padding: 0;
+  }
+  .about {
+    padding-bottom: 4rem;
+  }
+}
+@media (max-width: 370px) {
+  body, input, textarea, button {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  header h1 {
+    font-size: 3.5rem;
+    line-height: 4.2rem;
+  }
+  header h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  h3 {
+    font-size: 2.8rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  .skills .skillsList {
+    width: 90%;
+    gap: 2.5rem 0rem;
+  }
+  .skills .skillsList i {
+    font-size: 3.8rem;
+  }
+  .projectLinks a {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 340px) {
+  header h1 {
+    font-size: 3.3rem;
+  }
+  projectStack {
+    padding: 0.4rem 1rem;
+  }
+  .projectLinks a {
+    padding: 0.6rem 1.2rem;
+    margin-right: 0.4rem;
   }
 }
