@@ -5,11 +5,16 @@
 // }
 
 
-
+.portfolio {
+  h3 {
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+}
 .project {
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   gap: 2.5rem;
 }
 .projectTextContainer {
