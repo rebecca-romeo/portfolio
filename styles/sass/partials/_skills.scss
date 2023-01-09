@@ -1,49 +1,29 @@
+@use "./variables" as v;
+
 .skills {
-  background-image: url("../assets/background1.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.skillsSection {
   text-align: center;
-  background: rgba(255, 255, 255, 0.8);
-}
-
-i {
-  display: block;
-  font-size: 6rem;
-  margin-bottom: 1rem;
-}
-
-// .skillsList {
-//   display: flex;
-//   flex-wrap: wrap;
-//   // justify-content: center;
-//   width: 70%;
-//   gap: 50px;
-// }
-
-.skillsList {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  li {
-    width: 25%;
-    padding: 2rem;
-    &:hover,
-    &:focus {
-      background-image: linear-gradient(to right, rgba(236, 39, 255, 0.8), rgba(75, 200, 255, 0.8));
-      color: white;
-      border-radius: 10px;
+  .skillsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem 2rem;
+    width: 60%;
+    margin: 2rem auto 0;
+    li {
+      padding: 1rem;
+      // &:hover,
+      // &:focus {
+      //   color: white;
+      //   background: linear-gradient(to right, rgb(249, 97, 254), rgb(74, 204, 255));
+      //   border-radius: 50%;
+      //   padding: 2rem 2rem;
+      //   border: 1px solid v.$black;
+      //   text-shadow: 0.5px 0.5px black;
+      // }
+    }
+    i {
+      font-size: 6rem;
+      display: block;
+      margin-bottom: 1rem;
     }
   }
-}
-
-
-
-.skillsContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
