@@ -1,23 +1,33 @@
 @use "./variables" as v;
-
-
 header {
-    background: url(../../../assets/a6Wave-9.1s-1561px.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    // background-position: center;
-    height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+  background-image: url(../../../assets/header1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4rem 0 80rem;
+  height: 105vh;
+  .headerNav {
+    ul {
+      text-align: center;
+      display: flex;
+      gap: 2.5rem;
+    }
+    i {
+      font-size: 3rem;
+      background-color: v.$black;
+      border: 3px solid white;
+      border-radius: 50%;
+      padding: 2rem;
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
+        transition: 0.5s;
+      }
+    }
+  }
+  .headerText {
+    position: relative;
+    top: 15vh;
+  }
 }
-
-
-
-
-
-
 
 
