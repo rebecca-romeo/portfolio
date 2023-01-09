@@ -291,5 +291,65 @@
   form .submit {
     width: 50%;
   }
+}
 
+@media (max-width: 480px) {
+  header {
+    h1 {
+      letter-spacing: 0.2px;
+    }
+    .headerText {
+      top: 21vh;
+    }
+  }
+
+  .about .aboutImgContainer {
+    width: 70%;
+  }
+
+  .skills .skillsList {
+    width: 100%;
+    gap: 2rem 1.5rem;
+    i {
+      font-size: 4rem;
+    }
+  }
+
+  .project {
+    padding: 2rem 1rem 2.3rem;
+  }
+
+  .contact li {
+    padding: 2rem 1rem 0 0;
+  }
+}
+
+@media (max-width: 435px) {
+  header {
+    h1 {
+      font-size: 3.8rem;
+      line-height: 4.8rem;
+    }
+    h2 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    .headerNav {
+      ul {
+        gap: 1rem;
+      }
+      i {
+        font-size: 1.6rem;
+        border-width: 1.8px;
+        padding: 1rem;
+      }
+    }
+  }
+  // h4 {
+  //   font-size: 2rem;
+  // }
+
+  .about .aboutImgContainer {
+    width: 80%;
+  }
 }
