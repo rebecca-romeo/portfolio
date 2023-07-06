@@ -80,7 +80,7 @@
 }
 
 @media (max-width: 915px) {
-  // HEADER 
+  // HEADER
   header {
     .headerText {
       top: 15vh;
@@ -190,7 +190,7 @@
       font-size: 5rem;
     }
   }
-  
+
   // PROJECT SECTION
   .project {
     padding: 2.5rem 1rem 3rem ;
@@ -274,8 +274,8 @@
     margin-bottom: 2.5rem;
     border-width: 1.5px;
   }
-  
-  // CONTACT SECTION 
+
+  // CONTACT SECTION
   .contact {
     h3 {
       padding-bottom: 2rem;
@@ -298,6 +298,14 @@
     width: 55%;
     padding: 0.8rem 1.2rem;
   }
+}
+
+@media (max-width: 565px) {
+  .projectStack {
+    line-height: 3rem;
+    border-radius: 0%;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -365,8 +373,8 @@
 }
 
 @media (max-width: 395px) {
-  form .submit {  
-    width: 60%; 
+  form .submit {
+    width: 60%;
   }
   .skills .skillsList {
     width: 95%;

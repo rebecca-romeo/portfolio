@@ -855,6 +855,12 @@ form button {
     padding: 0.8rem 1.2rem;
   }
 }
+@media (max-width: 565px) {
+  .projectStack {
+    line-height: 3rem;
+    border-radius: 0%;
+  }
+}
 @media (max-width: 480px) {
   header h1 {
     letter-spacing: 0.2px;
