@@ -39,7 +39,6 @@
     border-radius: 4rem;
     .projectTextContainer {
       width: 92%;
-      // text-align: center;
     }
     .projectImg {
       width: 92%;
@@ -207,9 +206,8 @@
     font-size: 1.3rem;
   }
   header {
-    background-position: 35%;
-    height: 100vh;
-    padding: 4rem 0 0rem;
+    background-position: 30%;
+    height: 70vh;
     h1 {
       font-size: 4.5rem;
       line-height: 5.5rem;
@@ -229,15 +227,15 @@
       }
     }
     .headerText {
-      top: 0vh;
-      padding-bottom: 1.5rem;
+      top: 8vh;
+      padding-top: 3rem;
     }
   }
   .headerContainer{
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: relative;
-    top: 20vh;
+    // top: 9vh;
   }
   h3 {
     font-size: 3rem;
@@ -433,7 +431,7 @@
     font-size: 3.3rem;
   }
 
-  projectStack {
+  .projectStack {
     padding: 0.4rem 1rem;
   }
 
